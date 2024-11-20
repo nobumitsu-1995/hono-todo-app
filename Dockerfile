@@ -7,4 +7,4 @@ RUN npm ci
 
 COPY . .
 
-CMD ["sh", "-c", "npm run dev & npm run db:preview"]
+CMD ["sh", "-c", "npm run dev & npx prisma studio"]
